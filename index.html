@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to Bitwigblazer Developer Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCalc App Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #4a90e2;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #4a90e2;
+    }
+    a {
+      color: #4a90e2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>This is Bitwigblazer developer website.</p>
+  <header>
+    <h1>MyCalc - App Support</h1>
+  </header>
+
+  <div class="container">
+    <h2>Welcome</h2>
+    <p>
+      Thank you for using <strong>MyCalc</strong>! This page provides support information, troubleshooting help, and contact details.
+    </p>
+
+    <h2>Contact Support</h2>
+    <p>
+      If you encounter issues or have questions, feel free to reach out:
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:bitwigblazer@gmail.com">bitwigblazer@gmail.com</a></li>
+    </ul>
+
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>1. The app doesn't display ads properly.</strong><br />
+      Ensure you have a stable internet connection. Some ad formats may load slower depending on network availability.
+    </p>
+    <p><strong>2. Can I use MyCalc offline?</strong><br />
+      Yes. All core calculator functions work offline, except that there is no real time update for currency exchange rate. 
+    </p>
+
+    <h2>Privacy Policy</h2>
+    <p>
+      You can view the privacy policy here:
+      <a href="./privacy.html">Privacy Policy</a>
+    </p>
+  </div>
+
+  <footer>
+    © <span id="year"></span> MyCalc by BH Chia. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
